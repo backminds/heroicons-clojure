@@ -16,7 +16,7 @@ For [Fulcro](https://github.com/fulcrologic/fulcro),
 
 ```clojure
 (ns my-file
-  (require [com.backminds.heroicons-clojure.fulcro.outline.academic-cap :refer [academic-cap]]))
+  (:require [com.backminds.heroicons-clojure.fulcro.outline.academic-cap :refer [academic-cap]]))
 
 (dom/div {:classes ["h-5" "w-5"]}
   academic-cap)
@@ -26,7 +26,7 @@ For [Reagent](https://github.com/reagent-project/reagent),
 
 ```clojure
 (ns my-file
-  (require [com.backminds.heroicons-clojure.reagent.outline.academic-cap :refer [academic-cap]]))
+  (:require [com.backminds.heroicons-clojure.reagent.outline.academic-cap :refer [academic-cap]]))
 
 [:div {:class ["h-5" "w-5"]}
  academic-cap)
