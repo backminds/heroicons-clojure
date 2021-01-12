@@ -38,3 +38,7 @@ Requires [babashka](https://github.com/babashka/babashka).
 The heroicons set is offered under [its original license](https://github.com/tailwindlabs/heroicons).
 
 For simplicity, `heroicons-clojure` uses the same license.
+
+## About
+
+Created by Henrik & Oskar at [Backminds](https://backminds.com).
