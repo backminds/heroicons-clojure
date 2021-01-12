@@ -3,10 +3,10 @@
   <groupId>com.backminds</groupId>
   <artifactId>heroicons-clojure</artifactId>
   <packaging>jar</packaging>
-  <version>0.4.2-1</version>
+  <version>0.4.2-2</version>
   <name>heroicons-clojure</name>
   <description>heroicons for Fulcro and Reagent</description>
-  <url>http://github.com/metasoarous/toto</url>
+  <url>https://github.com/backminds/heroicons-clojure</url>
   <licenses>
     <license>
       <name>MIT</name>
