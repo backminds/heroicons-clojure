@@ -9,6 +9,28 @@ Currently we include Hiccup (for Reagent et. al.) and Fulcro definitions.
 com.backminds/heroicons-clojure {:mvn/version "0.4.2-2"}
 ```
 
+## Usage
+
+For `medium`/`outline` icons, the icon is available at
+
+```clojure
+;; Fulcro
+com.backminds.heroicons-clojure.fulcro.outline.{icon-name}/{icon-name}
+
+;; Reagent
+com.backminds.heroicons-clojure.reagent.outline.{icon-name}/{icon-name}
+```
+
+For `small`/`solid` icons, the icon is available at
+
+```clojure
+;; Fulcro
+com.backminds.heroicons-clojure.fulcro.solid.{icon-name}/{icon-name}
+
+;; Reagent
+com.backminds.heroicons-clojure.reagent.solid.{icon-name}/{icon-name}
+```
+
 ## Example with wrapper
 Using Tailwind classes.
 

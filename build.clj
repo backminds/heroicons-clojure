@@ -144,15 +144,17 @@
     (spit (str file-path "/" file-name* ".cljc") file-content)))
 
 
-(let [reagent-solid-fn   (partial make-reagent-icon "solid")
-      reagent-outline-fn (partial make-reagent-icon "outline")
-      fulcro-solid-fn    (partial make-fulcro-icon "solid")
-      fulcro-outline-fn  (partial make-fulcro-icon "outline")]
-  (doseq [solid-icon solid-icons]
-    (println "Processing solid" (file->file-name solid-icon))
-    (reagent-solid-fn solid-icon)
-    (fulcro-solid-fn solid-icon))
-  (doseq [outline-icon outline-icons]
-    (println "Processing outline" (file->file-name outline-icon))
-    (reagent-outline-fn outline-icon)
-    (fulcro-outline-fn outline-icon)))
+;; Generate solid icons
+;; ##################################
+(doseq [solid-icon solid-icons]
+  (println "Processing solid" (file->file-name solid-icon))
+  (make-reagent-icon "solid" solid-icon)
+  (make-fulcro-icon "solid" solid-icon))
+
+
+;; Generate outline icons
+;; ##################################
+(doseq [outline-icon outline-icons]
+  (println "Processing outline" (file->file-name outline-icon))
+  (make-reagent-icon "outline" outline-icon)
+  (make-fulcro-icon "outline" outline-icon))
