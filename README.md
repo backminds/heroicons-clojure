@@ -4,7 +4,7 @@ Converts the full [heroicons](https://heroicons.com) set for easy use from Cloju
 
 Currently we include Hiccup (for Reagent et. al.) and Fulcro definitions.
 
-## Clojars coordinates
+## Coordinates
 
 [![Clojars Project](https://img.shields.io/clojars/v/com.backminds/heroicons-clojure.svg)](https://clojars.org/com.backminds/heroicons-clojure)
 
