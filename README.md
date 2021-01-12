@@ -32,7 +32,7 @@ com.backminds.heroicons-clojure.reagent.solid.{icon-name}/{icon-name}
 ```
 
 ## Example with wrapper
-Using Tailwind classes.
+Using [Tailwind CSS](https://tailwindcss.com) classes.
 
 For [Fulcro](https://github.com/fulcrologic/fulcro),
 
