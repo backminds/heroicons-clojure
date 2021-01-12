@@ -68,4 +68,4 @@ For simplicity, `heroicons-clojure` uses the same license.
 
 ## About
 
-Created by Henrik & Oskar at [Backminds](https://backminds.com).
+Library by Henrik & Oskar at [Backminds](https://backminds.com). Icons by [Adam Wathan](https://github.com/adamwathan).
