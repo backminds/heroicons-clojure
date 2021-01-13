@@ -135,7 +135,8 @@
   [ns-name a-file]
   (let [file-name (file->file-name a-file)
         icon-def-str (svg-hiccup->def-str file-name (-> a-file slurp html->hiccup fulcroify))
-        file-content (str "(ns com.backminds.heroicons-clojure.fulcro." ns-name "." file-name ")"
+        file-content (str "(ns com.backminds.heroicons-clojure.fulcro." ns-name "." file-name "\n"
+                          "  (:refer-clojure :exclude [" file-name "]))"
                       "\n\n"
                       icon-def-str)
         file-name* (snakeify file-name)
