@@ -84,8 +84,10 @@
   (let [file-name (file->file-name a-file)
         icon-def-str (svg-hiccup->def-str file-name (-> a-file slurp html->hiccup))
         file-content (str "(ns com.backminds.heroicons-clojure.reagent." ns-name "." file-name ")"
-                      "\n\n"
-                      icon-def-str)
+                          "\n\n"
+                          icon-def-str
+                          "\n\n"
+                          "(def " file-name "-icon " file-name ")")
         file-name* (snakeify file-name)
         file-path (str "src/com/backminds/heroicons_clojure/reagent/" (snakeify ns-name))]
     (.mkdirs (io/file file-path))
@@ -138,7 +140,9 @@
         file-content (str "(ns com.backminds.heroicons-clojure.fulcro." ns-name "." file-name "\n"
                           "  (:refer-clojure :exclude [" file-name "]))"
                       "\n\n"
-                      icon-def-str)
+                      icon-def-str
+                      "\n\n"
+                      "(def " file-name "-icon " file-name ")")
         file-name* (snakeify file-name)
         file-path (str "src/com/backminds/heroicons_clojure/fulcro/" (snakeify ns-name))]
     (.mkdirs (io/file file-path))

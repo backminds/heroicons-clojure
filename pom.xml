@@ -3,7 +3,7 @@
   <groupId>com.backminds</groupId>
   <artifactId>heroicons-clojure</artifactId>
   <packaging>jar</packaging>
-  <version>0.4.2-3</version>
+  <version>0.4.2-4</version>
   <name>heroicons-clojure</name>
   <description>heroicons for Fulcro and Reagent</description>
   <url>https://github.com/backminds/heroicons-clojure</url>

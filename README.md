@@ -9,7 +9,7 @@ Currently we include Hiccup (for Reagent et. al.) and Fulcro definitions.
 [![Clojars Project](https://img.shields.io/clojars/v/com.backminds/heroicons-clojure.svg)](https://clojars.org/com.backminds/heroicons-clojure)
 
 ```
-com.backminds/heroicons-clojure {:mvn/version "0.4.2-3"}
+com.backminds/heroicons-clojure {:mvn/version "0.4.2-4"}
 ```
 
 ## Usage
@@ -56,6 +56,9 @@ For [Reagent](https://github.com/reagent-project/reagent),
 [:div {:class ["h-5" "w-5"]}
  academic-cap)
 ```
+
+Each namespace also includes an alias of the icon name with the suffix `-icon`, which can be used to
+avoid ambiguity.
 
 ## Building
 
